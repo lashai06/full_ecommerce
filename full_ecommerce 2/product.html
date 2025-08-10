@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details – Clothing Co</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Detailed information about our products at Clothing Co."
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo"><a href="index.html"><span class="accent">Clothing</span> Co</a></h1>
+        <nav class="nav">
+          <a href="shop.html" class="nav-link">Shop</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <button id="darkToggle" class="dark-toggle" aria-label="Toggle dark mode">
+            <span class="icon">🌙</span>
+          </button>
+          <button id="cartToggle" class="cart-button" aria-label="Open cart">
+            🛒<span id="cartCount" class="cart-count">0</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <section id="productDetail" class="product-detail">
+        <!-- Product details inserted by script.js -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Clothing Co. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Cart overlay reuse -->
+    <div id="cartOverlay" class="cart-overlay" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart">
+        <h2 id="cartTitle">Your Cart</h2>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+          <p>Total: $<span id="cartTotal">0.00</span></p>
+          <button id="checkoutButton" class="checkout-button">Checkout</button>
+          <button id="closeCart" class="close-cart">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
